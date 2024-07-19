@@ -9,6 +9,8 @@ from PyQt5.QtWidgets import QPushButton, QWidget
 
 class KeyboardWindow(QWidget):
 
+    canceled: pyqtSignal = pyqtSignal()
+    closed: pyqtSignal = pyqtSignal()
     language_changed: pyqtSignal = pyqtSignal(bool, str, bool)
 
     def __init__(self, callback=None, english: bool = True) -> None:
@@ -61,6 +63,7 @@ class KeyboardWindow(QWidget):
             btn.clicked.connect(self.print_btn_symbol)
 
         self.btn_backspace.clicked.connect(self.handle_backspace_clicked)
+        self.btn_cancel.clicked.connect(self.handle_cancel_clicked)
         self.btn_language.clicked.connect(self.change_language)
         self.btn_ok.clicked.connect(self.handle_ok_clicked)
         self.btn_upper.toggled.connect(self.handle_upper_clicked)
@@ -89,8 +92,13 @@ class KeyboardWindow(QWidget):
             self.edit_text.setCursorPosition(0)
 
     @pyqtSlot()
+    def handle_cancel_clicked(self) -> None:
+        self.canceled.emit()
+        self.closed.emit()
+
+    @pyqtSlot()
     def handle_ok_clicked(self) -> None:
-        self.hide()
+        self.closed.emit()
 
     @pyqtSlot(bool)
     def handle_upper_clicked(self, state: bool) -> None:

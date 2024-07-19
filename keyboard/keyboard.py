@@ -1,9 +1,9 @@
 from PyQt5.QtCore import pyqtSlot, Qt
-from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QDialog, QVBoxLayout
 from .keyboard_window import KeyboardWindow
 
 
-class Keyboard(QMainWindow):
+class Keyboard(QDialog):
 
     def __init__(self, callback=None) -> None:
         super().__init__()
@@ -18,23 +18,22 @@ class Keyboard(QMainWindow):
         self.resize(new_width, new_height)
 
     def _init_keyboards(self) -> None:
-        # self.setFixedSize(self.size())
         self.setWindowFlags(Qt.WindowCloseButtonHint)
-        # self.setWindowFlags(Qt.FramelessWindowHint)
         self.setWindowModality(Qt.ApplicationModal)
 
         self._keyboard_en: KeyboardWindow = KeyboardWindow(self._callback, True)
+        self._keyboard_en.canceled.connect(self.close)
+        self._keyboard_en.closed.connect(self.close)
         self._keyboard_en.language_changed.connect(self.change_language)
         self._keyboard_ru: KeyboardWindow = KeyboardWindow(self._callback, False)
+        self._keyboard_ru.canceled.connect(self.close)
+        self._keyboard_ru.closed.connect(self.close)
         self._keyboard_ru.language_changed.connect(self.change_language)
 
         layout = QVBoxLayout()
         layout.addWidget(self._keyboard_en)
         layout.addWidget(self._keyboard_ru)
-
-        widget = QWidget()
-        widget.setLayout(layout)
-        self.setCentralWidget(widget)
+        self.setLayout(layout)
 
     @pyqtSlot(bool, str, bool)
     def change_language(self, english: bool, text: str, upper: bool) -> None:
