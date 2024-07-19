@@ -1,4 +1,6 @@
+import os
 from PyQt5.QtCore import pyqtSlot, Qt
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QDialog, QVBoxLayout
 from .keyboard_window import KeyboardWindow
 
@@ -18,6 +20,8 @@ class Keyboard(QDialog):
         self.resize(new_width, new_height)
 
     def _init_keyboards(self) -> None:
+        self.setWindowTitle("Keyboard")
+        self.setWindowIcon(QIcon(os.path.join(os.path.dirname(os.path.abspath(__file__)), "keyboard.png")))
         self.setWindowFlags(Qt.WindowCloseButtonHint)
         self.setWindowModality(Qt.ApplicationModal)
 
@@ -31,6 +35,7 @@ class Keyboard(QDialog):
         self._keyboard_ru.language_changed.connect(self.change_language)
 
         layout = QVBoxLayout()
+        layout.setContentsMargins(1, 1, 1, 1)
         layout.addWidget(self._keyboard_en)
         layout.addWidget(self._keyboard_ru)
         self.setLayout(layout)
