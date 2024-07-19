@@ -17,7 +17,7 @@ class KeyboardWindow(QWidget):
         super().__init__()
         self._english: bool = english
         lang = "en" if english else "ru"
-        uic.loadUi(os.path.join("keyboard", f"keyboard_{lang}.ui"), self)
+        uic.loadUi(os.path.join(os.path.dirname(os.path.abspath(__file__)), f"keyboard_{lang}.ui"), self)
 
         self.cb = callback
 

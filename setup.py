@@ -19,7 +19,7 @@ setup(name="pyqt_virtual_keyboard",
       ],
       package_data={"keyboard": ["backspace.png",
                                  "keyboard_en.ui",
-                                 "keyboard_en.ui",
+                                 "keyboard_ru.ui",
                                  "up-arrow.png"],
                     },
       )
