@@ -75,18 +75,62 @@
           <pointsize>12</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
         <property name="text">
-         <string>Cancel</string>
+         <string>Отмена</string>
         </property>
        </widget>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="10,10,10,10,10,10,10,10,10,10">
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="10,10,10,10,10,10,10,10,10,10,10,10">
       <property name="spacing">
        <number>10</number>
       </property>
+      <item>
+       <widget class="QPushButton" name="btn_lt_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>ё</string>
+        </property>
+       </widget>
+      </item>
       <item>
        <widget class="QPushButton" name="btn_1">
         <property name="sizePolicy">
@@ -397,10 +441,45 @@ QPushButton:pressed
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="btn_backspace">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>backspace.png</normaloff>backspace.png</iconset>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,10,10,10,10,10,10,10,10,10">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,10,10,10,10,10,10,10,10,10,10,10">
       <property name="spacing">
        <number>10</number>
       </property>
@@ -714,10 +793,72 @@ QPushButton:pressed
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="btn_lt_23">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>х</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_lt_28">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>ъ</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,10,10,10,10,10,10,10,10,10,5">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,10,10,10,10,10,10,10,10,10,10,10,5">
       <property name="spacing">
        <number>10</number>
       </property>
@@ -1004,19 +1145,9 @@ QPushButton:pressed
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="widget_2" native="true"/>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="15,10,10,10,10,10,10,10,15">
-      <property name="spacing">
-       <number>10</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="btn_language">
+       <widget class="QPushButton" name="btn_lt_8">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -1026,8 +1157,97 @@ QPushButton:pressed
           <pointsize>12</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
         <property name="text">
-         <string>EN</string>
+         <string>ж</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_lt_31">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>э</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="15,10,10,10,10,10,10,10,10,10,15">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_upper">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>up-arrow.png</normaloff>up-arrow.png</iconset>
         </property>
        </widget>
       </item>
@@ -1249,19 +1469,81 @@ QPushButton:pressed
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="btn_lt_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>б</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_lt_32">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+QPushButton:pressed 
+{	
+	background-color: rgb(140, 223, 255);
+ }</string>
+        </property>
+        <property name="text">
+         <string>ю</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QWidget" name="widget_4" native="true"/>
       </item>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="10,10,10,40,10,10,10">
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="15,10,70,10,15">
       <property name="spacing">
        <number>10</number>
       </property>
       <item>
-       <widget class="QPushButton" name="btn_upper">
+       <widget class="QPushButton" name="btn_language">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -1285,38 +1567,7 @@ QPushButton:pressed
  }</string>
         </property>
         <property name="text">
-         <string>↑</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_underscore">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton
-{
-	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
-	border: 1px solid gray;
-	border-radius: 2px;
-}
-
-QPushButton:pressed 
-{	
-	background-color: rgb(140, 223, 255);
- }</string>
-        </property>
-        <property name="text">
-         <string>_</string>
+         <string>EN</string>
         </property>
        </widget>
       </item>
@@ -1378,12 +1629,12 @@ QPushButton:pressed
  }</string>
         </property>
         <property name="text">
-         <string/>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_period">
+       <widget class="QPushButton" name="btn_underscore">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -1409,38 +1660,7 @@ QPushButton:pressed
  }</string>
         </property>
         <property name="text">
-         <string>.</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_backspace">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton
-{
-	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
-	border: 1px solid gray;
-	border-radius: 2px;
-}
-
-QPushButton:pressed 
-{	
-	background-color: rgb(140, 223, 255);
- }</string>
-        </property>
-        <property name="text">
-         <string>←</string>
+         <string>_</string>
         </property>
        </widget>
       </item>

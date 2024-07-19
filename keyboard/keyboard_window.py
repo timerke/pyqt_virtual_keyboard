@@ -70,6 +70,8 @@ class KeyboardWindow(QMainWindow):
         self._change_buttons_font(font, self._buttons)
 
     def _get_buttons(self) -> None:
+        self._buttons_special = [self.btn_backspace, self.btn_cancel, self.btn_language, self.btn_ok, self.btn_upper]
+        self._buttons = []
         self._buttons_letters = []
         self._buttons_numbers = []
         for attr_name in dir(self):
@@ -77,25 +79,23 @@ class KeyboardWindow(QMainWindow):
                 self._buttons_numbers.append(getattr(self, attr_name))
             elif re.match(r"btn_lt_\d{1,2}", attr_name):
                 self._buttons_letters.append(getattr(self, attr_name))
-        self._buttons = [self.btn_upper, self.btn_underscore, self.btn_at, self.btn_space, self.btn_period,
-                         self.btn_backspace, self.btn_ok]
+            elif re.match(r"btn_.*", attr_name) and getattr(self, attr_name) not in self._buttons_special:
+                self._buttons.append(getattr(self, attr_name))
 
-    def _setup_listener(self):
+    def _setup_listener(self) -> None:
         for btn in self._buttons_letters:
             btn.clicked.connect(self.print_btn_symbol)
 
         for btn in self._buttons_numbers:
             btn.clicked.connect(self.print_btn_symbol)
 
-        self.btn_at.clicked.connect(self.print_btn_symbol)
-        self.btn_space.clicked.connect(self.print_btn_symbol)
-        self.btn_period.clicked.connect(self.print_btn_symbol)
-        self.btn_underscore.clicked.connect(self.print_btn_symbol)
+        for btn in self._buttons:
+            btn.clicked.connect(self.print_btn_symbol)
 
-        self.btn_upper.clicked.connect(self.handle_upper_clicked)
         self.btn_backspace.clicked.connect(self.handle_backspace_clicked)
-        self.btn_ok.clicked.connect(self.handle_ok_clicked)
         self.btn_language.clicked.connect(self.change_language)
+        self.btn_ok.clicked.connect(self.handle_ok_clicked)
+        self.btn_upper.clicked.connect(self.handle_upper_clicked)
 
     @pyqtSlot()
     def change_language(self) -> None:
