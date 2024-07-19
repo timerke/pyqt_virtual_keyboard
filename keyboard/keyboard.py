@@ -1,5 +1,5 @@
 from PyQt5.QtCore import pyqtSlot, QObject
-from gui.keyboard_window import KeyboardWindow
+from .keyboard_window import KeyboardWindow
 
 
 class Keyboard(QObject):
