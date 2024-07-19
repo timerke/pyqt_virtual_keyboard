@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.idea
+build
+dist
+release
+venv
+Reference/
+*/__pycache__
+eyepoint_s/gui/tr.bat
+launch_command.bat
