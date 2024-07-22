@@ -14,6 +14,11 @@ class KeyboardWindow(QWidget):
     ok_signal: pyqtSignal = pyqtSignal(str)
 
     def __init__(self, callback=None, english: bool = True) -> None:
+        """
+        :param callback:
+        :param english: if True, then you need to show the keyboard with English letters.
+        """
+
         super().__init__()
         self._english: bool = english
         lang = "en" if english else "ru"
@@ -129,3 +134,4 @@ class KeyboardWindow(QWidget):
 
     def set_text(self, text: str) -> None:
         self.edit_text.setText(text)
+        self.edit_text.setCursorPosition(len(text))

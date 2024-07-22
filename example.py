@@ -10,7 +10,7 @@ class MainWindow(QMainWindow):
         self._init_ui()
 
     def _init_ui(self) -> None:
-        self.kb = Keyboard(self)
+        self.kb: Keyboard = Keyboard(self)
         self.focused_input = None
 
         self.line_edit: QLineEdit = QLineEdit()
@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
 
     def handle_mouse_press(self, e):
         self.focused_input = self.line_edit
-        self.kb.exec_()
+        self.kb.exec_(self.line_edit.text())
 
     def on_key(self, keys):
         if self.focused_input is not None:

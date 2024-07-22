@@ -56,6 +56,10 @@ class Keyboard(QDialog):
     def _show_correct_board(self) -> None:
         self._keyboard_en.setVisible(self._english)
         self._keyboard_ru.setVisible(not self._english)
+        if self._english:
+            self._keyboard_en.edit_text.setFocus()
+        else:
+            self._keyboard_ru.edit_text.setFocus()
 
     @pyqtSlot(bool, str, bool)
     def change_language(self, english: bool, text: str, upper: bool) -> None:
@@ -65,10 +69,15 @@ class Keyboard(QDialog):
         new_board.change_upper_state(upper)
         self._show_correct_board()
 
-    def exec_(self) -> int:
+    def exec_(self, text: Optional[str] = None) -> int:
+        """
+        :param text: initial text.
+        :return: result code.
+        """
+
         self._text = None
         for keyboard in (self._keyboard_en, self._keyboard_ru):
-            keyboard.set_text("")
+            keyboard.set_text("" or text)
         self._show_correct_board()
         return super().exec_()
 
