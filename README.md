@@ -1,7 +1,9 @@
 # pyqt_virtual_keyboard
 Virtual keyboard based on PyQt5.
 
-![Keyboard image](./images/akobibili_keyboard.png)
+![English keyboard image](./images/en_keyboard.png)
+
+![Russian keyboard image](./images/ru_keyboard.png)
 
 This keyboard is design for touch screen applications on crossplatform (*Windows*, *Linux*), it was developed for Raspberry Pi with Python 3 for touch screen applications but can also work on windows, it can also be used on different sizes of screen :)
 
