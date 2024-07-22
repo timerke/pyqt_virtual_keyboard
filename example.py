@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
 
     def handle_mouse_press(self, e):
         self.focused_input = self.line_edit
-        self.kb.show()
+        self.kb.exec_()
 
     def on_key(self, keys):
         if self.focused_input is not None:

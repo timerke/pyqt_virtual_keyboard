@@ -9,9 +9,9 @@ from PyQt5.QtWidgets import QPushButton, QWidget
 
 class KeyboardWindow(QWidget):
 
-    canceled: pyqtSignal = pyqtSignal()
-    closed: pyqtSignal = pyqtSignal()
+    cancel_signal: pyqtSignal = pyqtSignal()
     language_changed: pyqtSignal = pyqtSignal(bool, str, bool)
+    ok_signal: pyqtSignal = pyqtSignal(str)
 
     def __init__(self, callback=None, english: bool = True) -> None:
         super().__init__()
@@ -94,12 +94,11 @@ class KeyboardWindow(QWidget):
 
     @pyqtSlot()
     def handle_cancel_clicked(self) -> None:
-        self.canceled.emit()
-        self.closed.emit()
+        self.cancel_signal.emit()
 
     @pyqtSlot()
     def handle_ok_clicked(self) -> None:
-        self.closed.emit()
+        self.ok_signal.emit(self.edit_text.text())
 
     @pyqtSlot(bool)
     def handle_upper_clicked(self, state: bool) -> None:
