@@ -3,7 +3,7 @@ import re
 from typing import List
 from PyQt5 import uic
 from PyQt5.QtCore import pyqtSignal, pyqtSlot
-from PyQt5.QtGui import QFont
+from PyQt5.QtGui import QFont, QIcon
 from PyQt5.QtWidgets import QPushButton, QWidget
 
 
@@ -17,7 +17,8 @@ class KeyboardWindow(QWidget):
         super().__init__()
         self._english: bool = english
         lang = "en" if english else "ru"
-        uic.loadUi(os.path.join(os.path.dirname(os.path.abspath(__file__)), f"keyboard_{lang}.ui"), self)
+        self._dir_path: str = os.path.dirname(os.path.abspath(__file__))
+        uic.loadUi(os.path.join(self._dir_path, f"keyboard_{lang}.ui"), self)
 
         self.cb = callback
 
@@ -103,11 +104,14 @@ class KeyboardWindow(QWidget):
     @pyqtSlot(bool)
     def handle_upper_clicked(self, state: bool) -> None:
         if state:
+            icon_name = "up-arrow-black.png"
             for btn in self._buttons_letters:
                 btn.setText(btn.text().upper())
         else:
+            icon_name = "up-arrow.png"
             for btn in self._buttons_letters:
                 btn.setText(btn.text().lower())
+        self.btn_upper.setIcon(QIcon(os.path.join(self._dir_path, icon_name)))
 
     @pyqtSlot()
     def print_btn_symbol(self) -> None:
