@@ -8,10 +8,15 @@ from .keyboard_window import KeyboardWindow
 
 class Keyboard(QDialog):
 
-    def __init__(self, callback=None) -> None:
+    def __init__(self, callback=None, english: bool = True) -> None:
+        """
+        :param callback:
+        :param english: if True, then you need to show the keyboard with English letters.
+        """
+
         super().__init__()
         self._callback = callback
-        self._english: bool = True
+        self._english: bool = english
         self._text: Optional[str] = None
         self._init_keyboards()
         self._change_size()
