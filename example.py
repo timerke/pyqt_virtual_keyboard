@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QLineEdit, QMainWindow, QVBoxLayout, QWidget
-from keyboard.keyboard import Keyboard
+from keyboard import Keyboard
 
 
 class MainWindow(QMainWindow):
