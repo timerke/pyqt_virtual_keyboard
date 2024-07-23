@@ -1,9 +1,10 @@
 import os
 from typing import Optional
 from PyQt5.QtCore import pyqtSlot, Qt
+from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QDialog
 from PyQt5.uic import loadUi
-from .languagekeyboard import LanguageKeyboard
+from .languagekeyboard import change_buttons_font, LanguageKeyboard
 
 
 class KeyboardDialog(QDialog):
@@ -71,6 +72,10 @@ class KeyboardDialog(QDialog):
         self.setWindowModality(Qt.ApplicationModal)
 
         self.btn_cancel.clicked.connect(self.close)
+        if font_size is not None:
+            font = QFont()
+            font.setPointSize(font_size)
+            change_buttons_font(font, self.btn_cancel, self.line_edit_text)
 
         self._keyboard_en: LanguageKeyboard = LanguageKeyboard(self.line_edit_text, self._callback, True,
                                                                font_size)
