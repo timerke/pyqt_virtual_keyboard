@@ -126,6 +126,7 @@ class LanguageKeyboard(QWidget):
             for btn in self._buttons_letters:
                 btn.setText(btn.text().lower())
         self.btn_upper.setIcon(QIcon(os.path.join(self._dir_path, icon_name)))
+        self._line_edit.setFocus()
 
     @pyqtSlot()
     def _print_btn_symbol(self) -> None:
