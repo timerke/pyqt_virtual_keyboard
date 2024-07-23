@@ -6,78 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>698</width>
-    <height>297</height>
+    <width>563</width>
+    <height>236</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="vertical_layout">
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="20,60,20">
-     <property name="spacing">
-      <number>10</number>
-     </property>
-     <item>
-      <widget class="QWidget" name="widget_5" native="true"/>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="edit_text">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_cancel">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton
-{
-	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
-	border: 1px solid gray;
-	border-radius: 2px;
-}
-
-QPushButton:pressed 
-{	
-	background-color: rgb(140, 223, 255);
- }</string>
-       </property>
-       <property name="text">
-        <string>Cancel</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="10,10,10,10,10,10,10,10,10,10">
+    <layout class="QHBoxLayout" name="horizontal_layout" stretch="10,10,10,10,10,10,10,10,10,10">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -91,7 +41,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -122,7 +72,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -153,7 +103,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -184,7 +134,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -215,7 +165,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -246,7 +196,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -277,7 +227,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -308,7 +258,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -339,7 +289,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -370,7 +320,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -394,7 +344,7 @@ QPushButton:pressed
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,10,10,10,10,10,10,10,10,10">
+    <layout class="QHBoxLayout" name="horizontal_layout_2" stretch="10,10,10,10,10,10,10,10,10,10">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -408,7 +358,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -439,7 +389,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -470,7 +420,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -501,7 +451,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -532,7 +482,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -563,7 +513,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -594,7 +544,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -625,7 +575,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -656,7 +606,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -687,7 +637,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -711,7 +661,7 @@ QPushButton:pressed
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,10,10,10,10,10,10,10,10,10,5">
+    <layout class="QHBoxLayout" name="horizontal_layout_3" stretch="5,10,10,10,10,10,10,10,10,10,5">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -728,7 +678,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -759,7 +709,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -790,7 +740,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -821,7 +771,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -852,7 +802,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -883,7 +833,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -914,7 +864,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -945,7 +895,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -976,7 +926,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1003,7 +953,7 @@ QPushButton:pressed
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="15,10,10,10,10,10,10,10,15">
+    <layout class="QHBoxLayout" name="horizontal_layout_4" stretch="15,10,10,10,10,10,10,10,15">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -1017,7 +967,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1059,7 +1009,7 @@ QPushButton:checked {
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1090,7 +1040,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1121,7 +1071,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1152,7 +1102,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1183,7 +1133,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1214,7 +1164,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1245,7 +1195,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1276,7 +1226,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1304,7 +1254,7 @@ QPushButton:pressed
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="15,10,50,10,15">
+    <layout class="QHBoxLayout" name="horizontal_layout_5" stretch="15,10,70,10,15">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -1318,7 +1268,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1353,7 +1303,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1384,7 +1334,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1415,7 +1365,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -1446,7 +1396,7 @@ QPushButton:pressed
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="styleSheet">
