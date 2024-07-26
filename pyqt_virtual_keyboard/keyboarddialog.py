@@ -12,17 +12,20 @@ class KeyboardDialog(QDialog):
     Class with virtual keyboard.
     """
 
-    def __init__(self, callback=None, font_size: Optional[int] = None) -> None:
+    def __init__(self, callback=None, font_size: Optional[int] = None, lang: Optional[str] = None) -> None:
         """
         :param callback:
-        :param font_size: new font size for keyboard.
+        :param font_size: new font size for keyboard;
+        :param lang: if EN or RU, then a keyboard will be created without switching between languages.
         """
 
         super().__init__()
         self._callback = callback
         self._english: bool = True
+        self._lang: Optional[str] = lang if lang is None else lang.lower()
         self._text: Optional[str] = None
         self._init_keyboards(font_size)
+        self._select_language()
         self._change_size()
 
     @property
@@ -89,6 +92,15 @@ class KeyboardDialog(QDialog):
         self.vertical_layout.setStretch(0, 10)
         self.vertical_layout.addWidget(self._keyboard_en, 50)
         self.vertical_layout.addWidget(self._keyboard_ru, 50)
+
+    def _select_language(self) -> None:
+        if self._lang is None or self._lang not in ("en", "ru"):
+            return
+
+        for keyboard in (self._keyboard_en, self._keyboard_ru):
+            keyboard.btn_language.setVisible(False)
+
+        self._english = self._lang == "en"
 
     def _show_correct_language(self) -> None:
         self._keyboard_en.setVisible(self._english)
