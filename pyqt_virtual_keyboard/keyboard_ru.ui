@@ -60,6 +60,9 @@ QPushButton:pressed
        <property name="text">
         <string>ё</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -90,6 +93,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>1</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -122,6 +128,9 @@ QPushButton:pressed
        <property name="text">
         <string>2</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -152,6 +161,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>3</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -184,6 +196,9 @@ QPushButton:pressed
        <property name="text">
         <string>4</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -214,6 +229,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>5</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -246,6 +264,9 @@ QPushButton:pressed
        <property name="text">
         <string>6</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -276,6 +297,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>7</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -308,6 +332,9 @@ QPushButton:pressed
        <property name="text">
         <string>8</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -339,6 +366,9 @@ QPushButton:pressed
        <property name="text">
         <string>9</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -369,6 +399,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>0</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -408,6 +441,9 @@ QPushButton:pressed
        <property name="text">
         <string>й</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -438,6 +474,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ц</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -470,6 +509,9 @@ QPushButton:pressed
        <property name="text">
         <string>у</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -500,6 +542,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>к</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -532,6 +577,9 @@ QPushButton:pressed
        <property name="text">
         <string>е</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -562,6 +610,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>н</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -594,6 +645,9 @@ QPushButton:pressed
        <property name="text">
         <string>г</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -624,6 +678,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ш</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -656,6 +713,9 @@ QPushButton:pressed
        <property name="text">
         <string>щ</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -686,6 +746,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>з</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -718,6 +781,9 @@ QPushButton:pressed
        <property name="text">
         <string>х</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -748,6 +814,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ъ</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -790,6 +859,9 @@ QPushButton:pressed
        <property name="text">
         <string>ф</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -820,6 +892,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ы</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -852,6 +927,9 @@ QPushButton:pressed
        <property name="text">
         <string>в</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -882,6 +960,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>а</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -914,6 +995,9 @@ QPushButton:pressed
        <property name="text">
         <string>п</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -944,6 +1028,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>р</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -976,6 +1063,9 @@ QPushButton:pressed
        <property name="text">
         <string>о</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1006,6 +1096,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>л</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1038,6 +1131,9 @@ QPushButton:pressed
        <property name="text">
         <string>д</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1069,6 +1165,9 @@ QPushButton:pressed
        <property name="text">
         <string>ж</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1099,6 +1198,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>э</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1183,6 +1285,9 @@ QPushButton:pressed
        <property name="text">
         <string>я</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1213,6 +1318,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ч</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1245,6 +1353,9 @@ QPushButton:pressed
        <property name="text">
         <string>с</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1275,6 +1386,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>м</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1307,6 +1421,9 @@ QPushButton:pressed
        <property name="text">
         <string>и</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1337,6 +1454,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>т</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1369,6 +1489,9 @@ QPushButton:pressed
        <property name="text">
         <string>ь</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1400,6 +1523,9 @@ QPushButton:pressed
        <property name="text">
         <string>б</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1430,6 +1556,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>ю</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1465,6 +1594,9 @@ QPushButton:pressed
        <property name="icon">
         <iconset>
          <normaloff>backspace.png</normaloff>backspace.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -1539,6 +1671,9 @@ QPushButton:pressed
        <property name="text">
         <string>,</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1570,6 +1705,9 @@ QPushButton:pressed
        <property name="text">
         <string/>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item>
@@ -1600,6 +1738,9 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>.</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
