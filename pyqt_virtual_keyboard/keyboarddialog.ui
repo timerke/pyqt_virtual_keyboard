@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>606</width>
-    <height>39</height>
+    <width>611</width>
+    <height>86</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,45 +18,32 @@
     <normaloff>keyboard.png</normaloff>keyboard.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="vertical_layout">
-   <property name="leftMargin">
-    <number>1</number>
+   <property name="spacing">
+    <number>20</number>
    </property>
-   <property name="topMargin">
-    <number>1</number>
-   </property>
-   <property name="rightMargin">
-    <number>1</number>
-   </property>
-   <property name="bottomMargin">
-    <number>1</number>
+   <property name="margin">
+    <number>20</number>
    </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontal_layout" stretch="60">
-     <property name="spacing">
-      <number>6</number>
+    <widget class="QLineEdit" name="line_edit_text">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
-     <item>
-      <widget class="QLineEdit" name="line_edit_text">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
