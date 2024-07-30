@@ -35,7 +35,7 @@
       <number>5</number>
      </property>
      <item>
-      <widget class="QPushButton" name="btn_1">
+      <widget class="QToolButton" name="btn_1">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -64,7 +64,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_2">
+      <widget class="QToolButton" name="btn_2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -87,7 +87,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_3">
+      <widget class="QToolButton" name="btn_3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -110,7 +110,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_4">
+      <widget class="QToolButton" name="btn_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -133,7 +133,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_5">
+      <widget class="QToolButton" name="btn_5">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -156,7 +156,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_6">
+      <widget class="QToolButton" name="btn_6">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -179,7 +179,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_7">
+      <widget class="QToolButton" name="btn_7">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -202,7 +202,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_8">
+      <widget class="QToolButton" name="btn_8">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -225,7 +225,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_9">
+      <widget class="QToolButton" name="btn_9">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -248,7 +248,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_0">
+      <widget class="QToolButton" name="btn_0">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -278,7 +278,7 @@
       <number>5</number>
      </property>
      <item>
-      <widget class="QPushButton" name="btn_lt_17">
+      <widget class="QToolButton" name="btn_lt_17">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -301,7 +301,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_23">
+      <widget class="QToolButton" name="btn_lt_23">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -324,7 +324,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_5">
+      <widget class="QToolButton" name="btn_lt_5">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -347,7 +347,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_18">
+      <widget class="QToolButton" name="btn_lt_18">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -370,7 +370,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_20">
+      <widget class="QToolButton" name="btn_lt_20">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -393,7 +393,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_25">
+      <widget class="QToolButton" name="btn_lt_25">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -416,7 +416,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_21">
+      <widget class="QToolButton" name="btn_lt_21">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -439,7 +439,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_9">
+      <widget class="QToolButton" name="btn_lt_9">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -462,7 +462,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_15">
+      <widget class="QToolButton" name="btn_lt_15">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -485,7 +485,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_16">
+      <widget class="QToolButton" name="btn_lt_16">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -518,7 +518,7 @@
       <widget class="QWidget" name="widget" native="true"/>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_1">
+      <widget class="QToolButton" name="btn_lt_1">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -541,7 +541,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_19">
+      <widget class="QToolButton" name="btn_lt_19">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -564,7 +564,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_4">
+      <widget class="QToolButton" name="btn_lt_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -587,7 +587,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_6">
+      <widget class="QToolButton" name="btn_lt_6">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -610,7 +610,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_7">
+      <widget class="QToolButton" name="btn_lt_7">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -633,7 +633,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_8">
+      <widget class="QToolButton" name="btn_lt_8">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -656,7 +656,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_10">
+      <widget class="QToolButton" name="btn_lt_10">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -679,7 +679,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_11">
+      <widget class="QToolButton" name="btn_lt_11">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -702,7 +702,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_12">
+      <widget class="QToolButton" name="btn_lt_12">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -762,7 +762,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_26">
+      <widget class="QToolButton" name="btn_lt_26">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -785,7 +785,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_24">
+      <widget class="QToolButton" name="btn_lt_24">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -808,19 +808,12 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_3">
+      <widget class="QToolButton" name="btn_lt_3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
        </property>
        <property name="text">
         <string>c</string>
@@ -831,7 +824,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_22">
+      <widget class="QToolButton" name="btn_lt_22">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -854,7 +847,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_2">
+      <widget class="QToolButton" name="btn_lt_2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -877,7 +870,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_14">
+      <widget class="QToolButton" name="btn_lt_14">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -900,7 +893,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_lt_13">
+      <widget class="QToolButton" name="btn_lt_13">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -923,7 +916,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_backspace">
+      <widget class="QToolButton" name="btn_backspace">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -977,7 +970,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_comma">
+      <widget class="QToolButton" name="btn_comma">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -1000,7 +993,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_language">
+      <widget class="QToolButton" name="btn_language">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -1024,7 +1017,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_space">
+      <widget class="QToolButton" name="btn_space">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -1047,7 +1040,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_period">
+      <widget class="QToolButton" name="btn_period">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
