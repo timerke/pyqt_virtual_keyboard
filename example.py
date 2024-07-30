@@ -25,6 +25,20 @@ class MainWindow(QMainWindow):
     def handle_mouse_press(self, e):
         self.focused_input = self.line_edit
         keyboard = KeyboardDialog(self)
+        keyboard.setStyleSheet("QPushButton {"
+                               "border-color: darkgreen;"
+                               "border-radius: 10px;"
+                               "border-style: outset;"
+                               "border-width: 4px;"
+                               "color: black;"
+                               "font: 18px;"
+                               "min-height: 30px;"
+                               "padding-left: 5px;"
+                               "padding-right: 5px;"
+                               "}"
+                               "QPushButton:pressed {"
+                               "background-color: lightgreen;"
+                               "}")
         keyboard.exec_(self.line_edit.text())
 
     def on_key(self, keys):

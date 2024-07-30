@@ -1,9 +1,8 @@
 import os
 import re
-from typing import Optional
 from PyQt5 import uic
 from PyQt5.QtCore import pyqtSignal, pyqtSlot
-from PyQt5.QtGui import QFont, QIcon
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QLineEdit, QWidget
 
 
@@ -12,16 +11,15 @@ class LanguageKeyboard(QWidget):
     Widget with language keyboard (Russian or English).
     """
 
+    cancel_signal: pyqtSignal = pyqtSignal()
     language_changed: pyqtSignal = pyqtSignal(bool, bool)
     ok_signal: pyqtSignal = pyqtSignal()
 
-    def __init__(self, line_edit: QLineEdit, callback=None, english: bool = True, font_size: Optional[int] = None
-                 ) -> None:
+    def __init__(self, line_edit: QLineEdit, callback=None, english: bool = True) -> None:
         """
         :param line_edit: line edit widget of keyboard;
         :param callback:
-        :param english: if True, then you need to create the keyboard with English letters;
-        :param font_size: new font size for keyboard.
+        :param english: if True, then you need to create the keyboard with English letters.
         """
 
         super().__init__()
@@ -35,23 +33,10 @@ class LanguageKeyboard(QWidget):
 
         self._get_buttons()
         self._setup_listener()
-        if font_size is not None:
-            self._change_size(font_size)
 
     @pyqtSlot()
     def _change_language(self) -> None:
         self.language_changed.emit(not self._english, self.btn_upper.isChecked())
-
-    def _change_size(self, font_size: int) -> None:
-        """
-        :param font_size: new font size for keyboard.
-        """
-
-        font = QFont()
-        font.setPointSize(font_size)
-        change_buttons_font(font, *self._buttons_letters)
-        change_buttons_font(font, *self._buttons_numbers)
-        change_buttons_font(font, *self._buttons)
 
     def _display_key(self, key: str) -> None:
         """
@@ -69,7 +54,7 @@ class LanguageKeyboard(QWidget):
             self.cb.on_key(new_text)
 
     def _get_buttons(self) -> None:
-        self._buttons_special = [self.btn_backspace, self.btn_language, self.btn_ok, self.btn_upper]
+        self._buttons_special = [self.btn_backspace, self.btn_cancel, self.btn_language, self.btn_ok, self.btn_upper]
         self._buttons = []
         self._buttons_letters = []
         self._buttons_numbers = []
@@ -96,6 +81,10 @@ class LanguageKeyboard(QWidget):
         else:
             self._line_edit.setFocus()
             self._line_edit.setCursorPosition(0)
+
+    @pyqtSlot()
+    def _handle_cancel_clicked(self) -> None:
+        self.cancel_signal.emit()
 
     @pyqtSlot()
     def _handle_ok_clicked(self) -> None:
@@ -133,6 +122,7 @@ class LanguageKeyboard(QWidget):
             btn.clicked.connect(self._print_btn_symbol)
 
         self.btn_backspace.clicked.connect(self._handle_backspace_clicked)
+        self.btn_cancel.clicked.connect(self._handle_cancel_clicked)
         self.btn_language.clicked.connect(self._change_language)
         self.btn_ok.clicked.connect(self._handle_ok_clicked)
         self.btn_upper.toggled.connect(self._handle_upper_clicked)
@@ -144,13 +134,3 @@ class LanguageKeyboard(QWidget):
 
         if upper != self.btn_upper.isChecked():
             self.btn_upper.toggle()
-
-
-def change_buttons_font(font: QFont, *buttons) -> None:
-    """
-    :param font: font to set for buttons;
-    :param buttons: buttons that need to be set to a new font.
-    """
-
-    for button in buttons:
-        button.setFont(font)

@@ -1,10 +1,9 @@
 import os
 from typing import Optional
 from PyQt5.QtCore import pyqtSlot, Qt
-from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QDialog
 from PyQt5.uic import loadUi
-from .languagekeyboard import change_buttons_font, LanguageKeyboard
+from .languagekeyboard import LanguageKeyboard
 
 
 class KeyboardDialog(QDialog):
@@ -12,10 +11,9 @@ class KeyboardDialog(QDialog):
     Class with virtual keyboard.
     """
 
-    def __init__(self, callback=None, font_size: Optional[int] = None, lang: Optional[str] = None) -> None:
+    def __init__(self, callback=None, lang: Optional[str] = None) -> None:
         """
         :param callback:
-        :param font_size: new font size for keyboard;
         :param lang: if EN or RU, then a keyboard will be created without switching between languages.
         """
 
@@ -24,7 +22,7 @@ class KeyboardDialog(QDialog):
         self._english: bool = True
         self._lang: Optional[str] = lang if lang is None else lang.lower()
         self._text: Optional[str] = None
-        self._init_keyboards(font_size)
+        self._init_keyboards()
         self._select_language()
         self._change_size()
 
@@ -65,27 +63,17 @@ class KeyboardDialog(QDialog):
         self._text = self.line_edit_text.text()
         self.close()
 
-    def _init_keyboards(self, font_size: Optional[int]) -> None:
-        """
-        :param font_size: new font size for keyboard.
-        """
-
+    def _init_keyboards(self) -> None:
         loadUi(os.path.join(os.path.dirname(os.path.abspath(__file__)), "keyboarddialog.ui"), self)
         self.setWindowFlags(Qt.WindowCloseButtonHint)
         self.setWindowModality(Qt.ApplicationModal)
 
-        self.btn_cancel.clicked.connect(self.close)
-        if font_size is not None:
-            font = QFont()
-            font.setPointSize(font_size)
-            change_buttons_font(font, self.btn_cancel, self.line_edit_text)
-
-        self._keyboard_en: LanguageKeyboard = LanguageKeyboard(self.line_edit_text, self._callback, True,
-                                                               font_size)
+        self._keyboard_en: LanguageKeyboard = LanguageKeyboard(self.line_edit_text, self._callback, True)
+        self._keyboard_en.cancel_signal.connect(self.close)
         self._keyboard_en.language_changed.connect(self._change_language)
         self._keyboard_en.ok_signal.connect(self._handle_ok)
-        self._keyboard_ru: LanguageKeyboard = LanguageKeyboard(self.line_edit_text, self._callback, False,
-                                                               font_size)
+        self._keyboard_ru: LanguageKeyboard = LanguageKeyboard(self.line_edit_text, self._callback, False)
+        self._keyboard_ru.cancel_signal.connect(self.close)
         self._keyboard_ru.language_changed.connect(self._change_language)
         self._keyboard_ru.ok_signal.connect(self._handle_ok)
 

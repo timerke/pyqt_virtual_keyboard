@@ -31,13 +31,10 @@
     <number>1</number>
    </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontal_layout" stretch="20,60,20">
+    <layout class="QHBoxLayout" name="horizontal_layout" stretch="60">
      <property name="spacing">
       <number>6</number>
      </property>
-     <item>
-      <widget class="QWidget" name="widget" native="true"/>
-     </item>
      <item>
       <widget class="QLineEdit" name="line_edit_text">
        <property name="sizePolicy">
@@ -56,37 +53,6 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_cancel">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton
-{
-	background-color: qlineargradient(spread:pad, x1:0.521, y1:0.8925, x2:0.504, y2:0.244227, stop:0.00847458 rgba(238, 235, 232, 255), stop:1 rgba(255, 255, 255, 255));
-	border: 1px solid gray;
-	border-radius: 2px;
-}
-
-QPushButton:pressed 
-{	
-	background-color: rgb(140, 223, 255);
- }</string>
-       </property>
-       <property name="text">
-        <string>Cancel</string>
        </property>
       </widget>
      </item>
